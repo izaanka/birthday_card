@@ -1,10 +1,4 @@
-/**
- * ========================================================
- * BIRTHDAY CARD INTERACTIVE SCRIPT
- * Handles candle interactions, swipe hit-testing, Web Audio,
- * confetti physics, and scene transitions.
- * ========================================================
- */
+
 
 (function () {
   'use strict';
@@ -50,9 +44,7 @@
   const cardMessage = document.getElementById('cardMessage');
   const cardSignature = document.getElementById('cardSignature');
 
-  /* ========================================================
-     1. INITIALIZATION & PERSONALIZATION INJECTION
-     ======================================================== */
+
   function init() {
     // Inject Config Data into Card
     if (cardGreeting) cardGreeting.textContent = config.cardHeader || "Happy Birthday";
@@ -76,9 +68,7 @@
     setupResizeListener();
   }
 
-  /* ========================================================
-     2. WEB AUDIO SYNTHESIZER (NO EXTERNAL FILES REQUIRED)
-     ======================================================== */
+
   function getAudioContext() {
     if (!audioCtx) {
       const AudioContext = window.AudioContext || window.webkitAudioContext;
@@ -215,9 +205,6 @@
     }
   }
 
-  /* ========================================================
-     3. CANDLES RENDERING & INTERACTION ENGINE
-     ======================================================== */
   function renderCandles() {
     if (!candlesContainer) return;
     candlesContainer.innerHTML = '';
@@ -293,9 +280,7 @@
     }
   }
 
-  /* ========================================================
-     4. TOUCH & SWIPE HIT-TESTING (MOBILE FRIENDLY)
-     ======================================================== */
+
   function setupCandleInteractions() {
     const stage = document.getElementById('cakeStage');
     if (!stage) return;
@@ -357,9 +342,7 @@
     });
   }
 
-  /* ========================================================
-     5. SCENE TRANSITION & CONFETTI CELEBRATION
-     ======================================================== */
+
   function revealBirthdayCard() {
     // 1. Fade out Cake Scene
     cakeScene.classList.remove('active');
@@ -400,9 +383,7 @@
     });
   }
 
-  /* ========================================================
-     6. HIGH-PERFORMANCE CANVAS CONFETTI ENGINE
-     ======================================================== */
+
   const CONFETTI_COLORS = [
     '#ffd700', '#f48fb1', '#dfa84a', '#ff9aa2',
     '#b5ead7', '#c7ceea', '#ffffff', '#ff6b6b'
