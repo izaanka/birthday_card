@@ -1,6 +1,4 @@
-/* ========================================================
-   STYLESHEET — ELEGANT BIRTHDAY CARD EXPERIENCE
-   ======================================================== */
+
 
 :root {
   /* Color Palette — Luxury Champagne & Rose Gold */
@@ -38,9 +36,7 @@
   --transition-smooth: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* ========================================================
-   GLOBAL RESETS & FOUNDATION
-   ======================================================== */
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -188,9 +184,7 @@ body {
   display: none !important;
 }
 
-/* ========================================================
-   SCENE 1: CAKE & CANDLE INTERACTION
-   ======================================================== */
+
 .cake-scene {
   text-align: center;
   gap: clamp(16px, 3vh, 28px);
@@ -425,9 +419,6 @@ body {
   }
 }
 
-/* ========================================================
-   THE CSS CAKE ART
-   ======================================================== */
 .cake {
   position: relative;
   display: flex;
@@ -818,9 +809,6 @@ body {
   transform: translateY(0);
 }
 
-/* ========================================================
-   RESPONSIVENESS & TOUCH OPTIMIZATIONS
-   ======================================================== */
 @media (max-width: 480px) {
   body {
     padding: 10px;
