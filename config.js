@@ -1,9 +1,4 @@
-/**
- * ========================================================
- * BIRTHDAY CARD CONFIGURATION
- * Personalize your birthday greeting here!
- * ========================================================
- */
+
 window.BIRTHDAY_CONFIG = {
   // 1. Recipient Details
   recipientName: "recipient name",
